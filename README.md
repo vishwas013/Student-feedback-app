@@ -2,6 +2,54 @@
 
 A full-stack web application where students can sign up, log in, submit feedback on courses, and manage their profiles. The app includes admin functionalities for managing users, courses, and viewing analytics.
 
+# How to Run the Student Feedback Web App
+
+1. Install Node.js 18 or higher (check with: node -v). 
+   If you don’t have it, download it from https://nodejs.org and install.
+
+2. Open a terminal in the project folder.
+
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm run dev
+
+5. Open your browser and go to:
+   http://localhost:3000
+
+6. Log in using default credentials or create a new account:
+   Admin:    admin@example.com / Admin123!
+   Student:  john@example.com / Student123!
+
+7. (Optional) To run in production mode:
+   npm run build
+   npm run start
+   Then open http://localhost:3000 again.
+
+
+### Prerequisites
+
+- Node.js 18+ installed on your machine
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone or download** the project files
+
+2. **Install dependencies**:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Start the development server**:
+   bash
+   npm run dev
+   
+  
+
+5. **Open your browser** and navigate to `http://localhost:3000`
+
 ## Features
 
 ### Authentication & Authorization
@@ -23,36 +71,6 @@ A full-stack web application where students can sign up, log in, submit feedback
 - **Course management** (add/edit/delete courses)
 - **Export feedback** data to CSV
 
-## Technology Stack
-
-- **Frontend**: Next.js 14 with App Router
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **Authentication**: JWT tokens with role-based access
-- **State Management**: React Context API
-- **Data Storage**: In-memory storage (for demo purposes)
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ installed on your machine
-- npm or yarn package manager
-
-### Installation
-
-1. **Clone or download** the project files
-
-2. **Install dependencies**:
-   \`\`\`bash
-   npm install
-   \`\`\`
-
-3. **Start the development server**:
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-
-4. **Open your browser** and navigate to `http://localhost:3000`
 
 ### Default Login Credentials
 
@@ -103,61 +121,6 @@ A full-stack web application where students can sign up, log in, submit feedback
    - Filter by course, rating, or student
    - Export data to CSV
 
-## Project Structure
 
-\`\`\`
-├── app/                    # Next.js app directory
-│   ├── admin/             # Admin-only pages
-│   ├── auth/              # Authentication pages
-│   ├── dashboard/         # Student dashboard
-│   ├── feedback/          # Feedback management
-│   ├── profile/           # Profile management
-│   └── layout.tsx         # Root layout
-├── components/            # Reusable UI components
-│   ├── auth/              # Authentication components
-│   ├── feedback/          # Feedback-related components
-│   └── ui/                # shadcn/ui components
-├── lib/                   # Utility functions and data
-│   ├── auth.ts            # Authentication utilities
-│   ├── storage.ts         # Data storage layer
-│   ├── types.ts           # TypeScript type definitions
-│   └── mock-data.ts       # Sample data
-└── README.md              # This file
-\`\`\`
-
-## Development Notes
-
-- This is a **demo application** using in-memory storage
-- In production, replace with a proper database (PostgreSQL, MongoDB, etc.)
-- Implement proper password hashing with bcrypt
-- Use a secure JWT implementation
-- Add proper error handling and validation
-- Implement file upload for profile pictures
-- Add email verification for new accounts
-
-# How to Run the Student Feedback Web App
-
-1. Install Node.js 18 or higher (check with: node -v). 
-   If you don’t have it, download it from https://nodejs.org and install.
-
-2. Open a terminal in the project folder.
-
-3. Install dependencies:
-   npm install
-
-4. Start the development server:
-   npm run dev
-
-5. Open your browser and go to:
-   http://localhost:3000
-
-6. Log in using default credentials or create a new account:
-   Admin:    admin@example.com / Admin123!
-   Student:  john@example.com / Student123!
-
-7. (Optional) To run in production mode:
-   npm run build
-   npm run start
-   Then open http://localhost:3000 again.
 
 
